@@ -8,7 +8,7 @@
     <meta name="description" content="Sample text for portfolio template meta tag">
     <meta name="keywords" content="Sample text for portfolio template meta tag">
     <meta name="author" content="Sample text for portfolio template meta tag">
-    <title>My portfolio website</title>
+    <title>Marisa's Portfolio</title>
     <!-- Adding favicon for older and modern browsers,
         It is best to add favicon to the main folder, 
         I used an only ico converter for best result,
@@ -16,10 +16,10 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- font for the quote -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+  <!-- Rubik-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
     <!-- font for the body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,194 +33,144 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
 </head>
-
-<body>
+<body style="background-color: #1c1c1c;">
     <!-- navigation bar -->
-    <nav class="sticky">
-        <label for="drop" class="toggle" id="main-toggle">
-            <span class="nav-icon"></span>
-        </label>
-        <input type="checkbox" id="drop">
-        <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-me.html">About me</a></li>
-            <li><a href="skill-set.html">Skill-set</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="#contact-me">Contact me</a></li>
-        </ul>
-    </nav>
+  <div class="navbar">
+    <a href="index.html" class="namebar">Marisa</a>
+    <a href="#home">About</a>
+    <a href="certification.html">Certifications</a>
+    <div class="dropdown">
+      <button class="dropbtn">Portfolios 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://marisar12.github.io/Sophomore_Portfolio/">Sophmore portfolio</a>
+        <a href="https://marisar12.github.io/Marisa-Junior_portfolio/">Early junior portfolio</a>
+      </div>
+    </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="location.href='project.html'">Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cfus.html">CFUS</a>
+          <a href="infyApp.html">InfyApp</a>
+          <a href="G4C.html">G4C</a>
+        </div>
+      </div> 
+  </div>
 
     <!-- introduction -->
+  <br>
+  <br>
+  <br>
     <header class="grid-system-2 w-900 padding">
         <section class="align-center">
-            <h1 class="medium-spacing">Hello, I am</h1>
-            <h1 class="large">Your name</h1>
-            <p class="justify">That large class above is only suitable for short names/nicknames. If you want to display
-                your full name there, consider using the "medium-spacing" and "colorful-letter" classes instead, to
-                maintain responsiveness.</p>
+            <h1 class="medium-spacing" style="color: white;">Hi! My name's</h1>
+            <h1 class="large">Marisa</h1>
+            <p class="justify" style="color: white;">I'm a junior in high school and want to pursue a career in UX/UI design. Use the menu bar to view my work.</p>
         </section>
         <section class="center align-center">
-            <img class="header-img max-width max-height" src="assets/profile-pic.png" alt="profile-picture">
+            <img style="width: 100%;" src="me.jpeg" alt="profile-picture">
         </section>
     </header>
 
 
     <!-- quote -->
-    <article class="baby-pink">
-        <p class="quote uppercase">Write something touchy, funny, or deep here.</p>
-        <p>And unfold it here a little.</p>
+    <article class="baby-pink" style="background-color: #724C9D;">
     </article>
 
-    <!-- about me -->
-    <!-- That about me png is something I've made for fun, it has a purple version too, feel free to use it or change it to anything else. -->
-    <section class="wrapper">
-        <section class="margin-auto">
-            <img class="max-width max-height" src="assets/about-me.png" alt="about-me-logo">
-        </section>
-        <section class="justify align-center">
-            <p class="bold">About me</p>
-            <p>Here you may write something captivating and exciting about yourself, so that everyone wants to use that
-                button below.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolor officia nulla in culpa
-                necessitatibus maiores natus quae adipisci magnam. Voluptas voluptatibus voluptatem est fugiat,
-                provident incidunt perferendis fuga soluta?.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius obcaecati labore pariatur quisquam veniam,
-                assumenda consectetur asperiores accusamus fugit. </p>
-            <p class="padding-top"><a href="about-me.html" class="button-outline">More info</a></p>
-        </section>
-    </section>
+    
 
     <!-- skills -->
     <!-- use this to showcase your skills, if you make changes, do not forget to modify the css accordingly -->
-    <section>
-        <h3 class="main-title center padding">Skills</h3>
+    <section class="progress">
+        <h3 class="main-title center padding" style="color: white;">Technical Skills</h3>
     </section>
-    <section class="wrapper">
+    <section class="wrapper" id="skills">
         <section class="column">
-            <p class="padding-bottom">Technical skills</p>
             <section class="skills">
                 <ul class="no-bullet-list no-padding-list-item">
-                    <li>
-                        <p>html</p>
+                    <li id="html">
+                        <p style="color: white;">HTML - 80%</p>
                         <span class="progress-bar"><span class="html"></span></span>
                     </li>
                     <li>
-                        <p>css</p>
+                        <p style="color: white;">CSS - 80%</p>
                         <span class="progress-bar"><span class="css"></span></span>
                     </li>
                     <li>
-                        <p>javascript</p>
+                        <p style="color: white;">Javascript - 20%</p>
                         <span class="progress-bar"><span class="javascript"></span></span>
                     </li>
                     <li>
-                        <p>php, mysql</p>
-                        <span class="progress-bar"><span class="php"></span></span>
+                        <p style="color: white;">Python - 70%</p>
+                        <span class="progress-bar"><span class="python"></span></span>
                     </li>
                 </ul>
             </section>
         </section>
-        <section class="column">
-            <p class="padding-bottom">Professional skills</p>
-            <section class="skills">
-                <ul class="no-bullet-list no-padding-list-item">
-                    <li>
-                        <p>communication</p>
-                        <span class="progress-bar"><span class="comm-adapt"></span></span>
-                    </li>
-                    <li>
-                        <p>teamplayer, adaptability</p>
-                        <span class="progress-bar"><span class="team-player"></span></span>
-                    </li>
-                    <li>
-                        <p>problem solving</p>
-                        <span class="progress-bar"><span class="problem-solving"></span></span>
-                    </li>
-                    <li>
-                        <p>open-minded</p>
-                        <span class="progress-bar"><span class="open-minded"></span></span>
-                    </li>
-                </ul>
-            </section>
-        </section>
-    </section>
-    </section>
 
+    </section>
+<br>
+<hr>
     <!-- Projects -->
-    <!-- If you have more projects you are working on at the moment, or just want to show more, double the whole section below without the title and you are good to go -->
     <section>
-        <h3 class="main-title center padding">Projects I am currently working on</h3>
+        <h3 class="main-title center padding" style="color: white;">Projects</h3>
     </section>
-    <section class="wrapper">
-        <section class="column card justify flex">
-            <img class="box" src="assets/project1.png" alt="project1">
-            <p class="padding bold center">Project name here</p>
-            <p>Project description here.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium totam, iusto recusandae, repudiandae
-                molestias adipisci perferendis, beatae quia voluptates aspernatur consequatur minima? Maiores neque
-                ullam explicabo, autem molestiae velit delectus?</p>
-            <p class="padding-top bottom"><a href="portfolio.html" class="button-outline">Portfolio</a></p>
+    <section class="wrapper" >
+        <section class="column card justify flex" id="MentalSpark">
+            <p class="padding bold center" style="color: white;">MentalSpark</p>
+            <img class="photo" src="MentalSpark.jpeg">
+            <p style="color:white;">MentalSpark was an app that me and my group created to address the social issue mental health for the Infy App competition. Our app was aimed to help those that are struggling with their mental health and 'rekindle their spark'</p>
+            <p class="padding-top bottom"><a href="https://marisar12.github.io/MentalSpark/" class="button-outline">MentalSpark Website</a></p>
         </section>
-        <section class="column card justify flex">
-            <img class="box" src="assets/project2.png" alt="project2">
-            <p class="padding bold center">Project name here</p>
-            <p>Project description here.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum dignissimos facilis molestias, laborum
-                repellendus delectus accusantium, laboriosam aut cupiditate culpa eum animi deleniti nostrum quibusdam
-                consequatur eos in exercitationem dolores!</p>
-            <p class="padding-top bottom"><a href="portfolio.html" class="button-outline">Portfolio</a></p>
+        <section class="column card justify flex" id="Rations">
+            <p class="padding bold center" style="color: white;">Rations</p>
+            <img class="photo" src="rations.jpeg">
+            <p style="color:white;">Rations was a game that I created for the peaceformers challenge theme for the G4C competition. Rations takes place in an apocolyptic world where the users have to take care of their group by completing quests to obtain resources. Users will have to learn to keep the peace or else they can risk getting booted.</p>
+            <p class="padding-top bottom"><a href="https://marisar12.github.io/G4C--25/" class="button-outline">Rations Website</a></p>
         </section>
 
+
     </section>
+    <p class="padding-top bottom"><a href="project.html" class="button-outline" style="margin-left: 48%;">See All --></a></p>
 
     <!-- contact me -->
     <!-- Five logo can be in one row, and if it still not enough, you can create another row, buy doubleing the "box-contact" section -->
-    <section id="contact-me" class="grid-system-2 w-900 padding">
-        <section class="margin-auto">
-            <img class="max-width max-height" src="assets/Contact-me-img.png" alt="contact-me-illustration">
-        </section>
-        <section class="margin-auto align-center">
-            <h1 class="medium-spacing center">Let's get in touch!<span></span></h1>
-            <section class="box-contact margin-auto padding-top">
-                <span>
-                    <a href="https://www.linkedin.com/" target="_blank"><img class="logo" src="assets/linkedin.png"
-                            alt=""></a>
-                </span>
-                <span>
-                    <a href="https://github.com/" target="_blank"><img class="logo" src="assets/github.png" alt=""></a>
-                </span>
-                <span>
-                    <a href="mailto:xy@gmail.com" target="_blank"><img class="logo" src="assets/email.png" alt=""></a>
-                </span>
-            </section>
-        </section>
-    </section>
 
     <!-- special thanks -->
     <!-- Here you can see the free resources I've used for the logos and illustrations. Do not forget to give credit to the creators of the free stuffs use may use additionally -->
-    <section>
-        <p class="small thanks justify w-900 padding-left">*Thanks for the illustration:
-            <a class="link colorful-letter" href="https://storyset.com/work" target="_blank">work illustrations</a> by
-            Storyset
-
-        </p>
-        <p class="small thanks justify w-900 padding-left">*Thanks for the icons:
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Flatart" target="_blank">flatart,
-                </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/font-awesome" target="_blank">font
-                    awesome, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/fluent-designsystem"
-                    target="_blank">microsoft, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Chanut-is" target="_blank">chanut is
-                    indurstries, </a></span>
-            <span><a class="link colorful-letter" href="https://www.iconfinder.com/Kalashnyk" target="_blank">kalash
-                </a></span>
-            on Iconfinder
-        </p>
-    </section>
+ 
 
     <!-- footer -->
     <!-- waits for you to take over! -->
-    <footer>@iluskaland 2024</footer>
+ <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer style="background-color: gray;">
+        porfolio of Marisa Ramautar
+        <br>
+        portfolio template by: @iluskaland 2024
+        <br>
+        *Thanks for the illustration: work illustrations by Storyset
+        <br>
+        *Thanks for the icons: flatart, font awesome, microsoft, chanut is indurstries, kalash on Iconfinder
+
+
+    
+        <br>
+        <br>
+        </footer>
+
+    <script>
+          document.querySelector('.dropbtn').addEventListener('click', function () {
+            window.location.href = 'project.html';
+          });
+    </script>
+
 </body>
 
 </html>
