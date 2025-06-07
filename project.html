@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Review this part and modify it to your liking -->
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>Marisa's Portfolio</title>
+    <!-- Adding favicon for older and modern browsers,
+        It is best to add favicon to the main folder, 
+        I used an only ico converter for best result,
+        Do not forget to clear you cache to see the changes -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Rubik-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    <!-- font for the body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <!-- font for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar -->
+  <div class="navbar">
+    <a href="index.html" class="namebar">Marisa</a>
+    <a href="#home">About</a>
+    <a href="certification.html">Certifications</a>
+    <div class="dropdown">
+      <button class="dropbtn">Portfolios 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://marisar12.github.io/Sophomore_Portfolio/">Sophmore portfolio</a>
+        <a href="https://marisar12.github.io/Marisa-Junior_portfolio/">Early junior portfolio</a>
+      </div>
+    </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="location.href='project.html'">Projects 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="cfus.html">CFUS</a>
+          <a href="infyApp.html">InfyApp</a>
+          <a href="G4C.html">G4C</a>
+        </div>
+      </div> 
+  </div>
+
+    <!-- introduction -->
+  
+    <!-- Projects -->
+    <!-- If you have more projects you are working on at the moment, or just want to show more, double the whole section below without the title and you are good to go -->
+    <section>
+        <h3 class="main-title center padding">Projects</h3>
+    </section>
+    <section class="wrapper" id="all" style="margin-left: 1%;">
+        <section class="column card justify flex" id="projects">
+            <p class="padding bold center">CFU'S</p>
+            <img class="photo" src="cfu.png">
+            <p>CFU'S were assignments that we did in class in order to understand how to learn python and use it. </p>
+            <p class="padding-top bottom"><a href="cfus.html" class="button-outline">Go to CFU'S</a></p>
+        </section>
+        <section class="column card justify flex" id="projects">
+            <p class="padding bold center">G4C</p>
+            <img class="photo" src="rations.jpeg">
+            <p>Rations was a game that I created for the peaceformers challenge theme for the G4C competition. Rations takes place in an apocolyptic world where the users have to take care of their group by completing quests to obtain resources. Users will have to learn to keep the peace or else they can risk getting booted.</p>
+            <p class="padding-top bottom"><a href="G4C.html" class="button-outline">Go to G4C</a></p>
+        </section>
+      <section class="column card justify flex" id="projects">
+          <p class="padding bold center">InfyApp</p>
+          <img class="photo" src="MentalSpark.jpeg">
+          <p>Rations was a game that I created for the peaceformers challenge theme for the G4C competition. Rations takes place in an apocolyptic world where the users have to take care of their group by completing quests to obtain resources. Users will have to learn to keep the peace or else they can risk getting booted.</p>
+          <p class="padding-top bottom"><a href="infyApp.html" class="button-outline">Go to InfyApp</a></p>
+      </section>
+
+
+    </section>
+
+
+
+
+    <!-- footer -->
+    <!-- waits for you to take over! -->
+ <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer style="background-color: gray;">
+        porfolio of Marisa Ramautar
+        <br>
+        portfolio template by: @iluskaland 2024
+        <br>
+        *Thanks for the illustration: work illustrations by Storyset
+        <br>
+        *Thanks for the icons: flatart, font awesome, microsoft, chanut is indurstries, kalash on Iconfinder
+
+
+
+        <br>
+        <br>
+        </footer>
+  <script>
+        document.querySelector('.dropbtn').addEventListener('click', function () {
+          window.location.href = 'project.html';
+        });
+  </script>
+
+</body>
+
+</html>
